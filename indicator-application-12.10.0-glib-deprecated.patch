@@ -1,0 +1,13 @@
+diff -urN indicator-application-12.10.0/src/application-service.c indicator-application-12.10.0-patched/src/application-service.c
+--- indicator-application-12.10.0/src/application-service.c	2012-08-22 15:33:38.000000000 +1100
++++ indicator-application-12.10.0-patched/src/application-service.c	2014-03-06 19:05:19.636937264 +1100
+@@ -52,7 +52,9 @@
+ int
+ main (int argc, char ** argv)
+ {
++#if (GLIB_MAJOR_VERSION <= 2 && GLIB_MINOR_VERSION <= 35 && GLIB_MICRO_VERSION <= 0)
+ 	g_type_init();
++#endif
+ 
+ 	/* Bring us up as a basic indicator service */
+ 	service = indicator_service_new_version(INDICATOR_APPLICATION_DBUS_ADDR, INDICATOR_APPLICATION_SERVICE_VERSION);

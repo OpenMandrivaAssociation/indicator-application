@@ -6,6 +6,7 @@ License:	GPLv3+
 Group:		Graphical desktop/GNOME
 Url:		http://launchpad.net/indicator-application
 Source0:	%{name}-%{version}.tar.gz
+Patch0:		indicator-application-12.10.0-glib-deprecated.patch
 BuildRequires:	pkgconfig(appindicator3-0.1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(dbusmenu-gtk3-0.4)
@@ -27,6 +28,7 @@ applications and displays them on the panel bar.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x \
