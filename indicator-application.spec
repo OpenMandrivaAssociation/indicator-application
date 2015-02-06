@@ -1,7 +1,7 @@
 Summary:	Displays application menu's on panel
 Name:		indicator-application
 Version:	12.10.0
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Graphical desktop/GNOME
 Url:		http://launchpad.net/indicator-application
