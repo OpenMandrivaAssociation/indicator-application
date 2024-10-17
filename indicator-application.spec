@@ -4,7 +4,7 @@ Version:	12.10.0
 Release:	3
 License:	GPLv3+
 Group:		Graphical desktop/GNOME
-Url:		http://launchpad.net/indicator-application
+Url:		https://launchpad.net/indicator-application
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		indicator-application-12.10.0-glib-deprecated.patch
 BuildRequires:	pkgconfig(appindicator3-0.1)
