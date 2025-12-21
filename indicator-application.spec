@@ -7,6 +7,11 @@ Group:		Graphical desktop/GNOME
 Url:		https://launchpad.net/indicator-application
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		indicator-application-12.10.0-glib-deprecated.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(appindicator3-0.1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(dbusmenu-gtk3-0.4)
